@@ -27,3 +27,14 @@ After Create Droplet Server on Digital Ocean .
 - `sudo mysql` or  `sudo mysql -u root -p `
 - `create database name_database;`
 - For Show All Databases`SHOW DATABASES;`
+
+#### 5- Install Laravel From git using shell 
+- `apt install composer`
+- `cd /var/www`
+- `git clone repo_project`
+- `cd repo_project`
+- `composer install`
+- Change Name File .env.example to .env : `cp .env.example .env`
+- Login to file **.env** and update value for *APP_URL & db_name & username & db_password* `vim .env `
+- After that close file and save config `ESC SHIFT + :wq` and `enter`
+- Migrate table in your project and create key  `php artisan migrate` & `php artisan key:generate`
