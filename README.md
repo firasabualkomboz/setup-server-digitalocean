@@ -39,14 +39,25 @@ After Create Droplet Server on Digital Ocean .
 - After that close file and save config `ESC SHIFT + :wq` and `enter`
 - Migrate table in your project and create key  `php artisan migrate` & `php artisan key:generate`
 
-#### 6- Config
+#### 6- Setup Apache Configuration
 - After Login To ssh : `cd /etc/apache2/sites-available`
 - `sudo vim 000-default.conf`
 - *Are you ready now to adjust your project files with the server?
 
-```` shell
-public function test (){
-
-}
+```` console
+<VirtualHost*:80>
+ServerAdmin webmaster@localhost
+DocumentRoot/var/www/your_repo/public
+<Directory/var/www/your_repo/public>
+Options Indexes FollowSymLinks
+AllowOverride All
+Require all granted
+</Directory>
+ErrorLog$(APACHE_LOG_DIR)/error.log
+CustomLog$(APACHE_LOG_DIR)/access.log combined
+<IfModule mod_dir.c>
+DirectoryIndex index.php index.pl index.cgi index.html index.xhtml index.htm
+</IfModule>
+</VirtualHost>
 
 ````
