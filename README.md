@@ -64,7 +64,8 @@ DirectoryIndex index.php index.pl index.cgi index.html index.xhtml index.htm
 - After that close file and save config `ESC SHIFT + :wq` and `enter`
 - Restart Apache `sudo a2enmod rewrite`
 - `systemctl restart apache2` **OR** `sudo service apache2 restart`
-- Fix some issues i expectem same it : 
+- issues you are expected to encounter : 
+
   - `cd /var/www/your_project`
   - `sudo chmod -R 777 storage`
   - `sudo chmod -R 777 public` 
