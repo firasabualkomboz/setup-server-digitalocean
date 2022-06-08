@@ -42,7 +42,7 @@ After Create Droplet Server on Digital Ocean .
 #### 6- Setup Apache Configuration
 - After Login To ssh : `cd /etc/apache2/sites-available`
 - `sudo vim 000-default.conf`
-- *Are you ready now to adjust your project files with the server?
+- **Are you ready now to adjust your project files with the server ?**
 
 ```` console
 <VirtualHost*:80>
