@@ -38,3 +38,12 @@ After Create Droplet Server on Digital Ocean .
 - Login to file **.env** and update value for *APP_URL & db_name & username & db_password* `vim .env `
 - After that close file and save config `ESC SHIFT + :wq` and `enter`
 - Migrate table in your project and create key  `php artisan migrate` & `php artisan key:generate`
+
+#### 6- Config
+
+```` php
+public function test (){
+
+}
+
+````
