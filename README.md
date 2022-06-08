@@ -40,8 +40,11 @@ After Create Droplet Server on Digital Ocean .
 - Migrate table in your project and create key  `php artisan migrate` & `php artisan key:generate`
 
 #### 6- Config
+- After Login To ssh : `cd /etc/apache2/sites-available`
+- `sudo vim 000-default.conf`
+- *Are you ready now to adjust your project files with the server?
 
-```` php
+```` shell
 public function test (){
 
 }
