@@ -7,14 +7,28 @@ After Create Droplet Server on Digital Ocean .
  ssh root@ip_address
 ```
 
-#### 2- install PHP and extensions required to LARAVEL 
-- `apt-get update && apt-get upgrade`
-- `add-apt-repository ppa:ondrej/php `
-- `apt-get update`
-- `apt-get install php7.4 `
-- `apt-get install php-pear php7.4-curl php7.4-dev`
-- `apt-get install php7.4-gd php7.4-mbstring php7.4-zip`
-- `apt-get install php7.4-mysql php7.4-xml`
+#### 2- Install PHP and extensions required to LARAVEL 
+```bash
+apt-get update && apt-get upgrade
+```
+```bash
+add-apt-repository ppa:ondrej/php
+```
+```bash
+apt-get update
+```
+```bash
+apt-get install php7.4 
+```
+```bash
+apt-get install php-pear php7.4-curl php7.4-dev
+```
+```bash
+apt-get install php7.4-gd php7.4-mbstring php7.4-zip
+```
+```bash
+apt-get install php7.4-mysql php7.4-xml
+```
 
 #### 3- Install MYSQL Server 
 - Update apt : `sudo apt update`
