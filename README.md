@@ -3,7 +3,10 @@
 After Create Droplet Server on Digital Ocean . 
 #### 1 - Login To Your server using shell. 
 
-- `ssh root@ip_address`
+```bash
+ ssh root@ip_address
+```
+
 #### 2- install PHP and extensions required to LARAVEL 
 - `apt-get update && apt-get upgrade`
 - `add-apt-repository ppa:ondrej/php `
