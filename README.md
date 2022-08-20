@@ -31,7 +31,10 @@ apt-get install php7.4-mysql php7.4-xml
 ```
 
 #### 3- Install MYSQL Server 
-- Update apt : `sudo apt update`
+- Update apt : `sudo apt update` 
+```bash
+sudo apt update
+```
 - install mysql-server package : `sudo apt install mysql-server`
 
 #### 4- Configuring MySQL 
